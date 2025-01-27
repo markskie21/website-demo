@@ -17,6 +17,18 @@
     --second-bg-color: #131313;
     --text-color: #fff;
     --main-color: #00ffee;
+    --first-color: hsl(298, 71%, 16%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(56, 63%, 58%);
+    --second-color: hsl(133, 22%, 87%);
+    --dark-color: hsl(175, 98%, 51%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(214, 10%, 31%);
+    --container-color: hsl(318, 67%, 28%);
+    --body-font: "Bai Jamjuree", sans-serif;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+  
 }
 
 html{
@@ -28,6 +40,7 @@ body{
   background: var(--bg-color);
   color: var(--text-color);
 }
+
 .header{
   position: fixed;
   width: 100%;
@@ -65,6 +78,7 @@ span{
   background-clip: text;
   color: transparent;
 }
+
 .navbar a{
   font-size: 1.8rem;
   color: var(--text-color);
@@ -126,7 +140,7 @@ section{
   font-size: 4rem;
 }
 .home-content p{
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 1.8;
 
@@ -221,54 +235,165 @@ section{
 ::-webkit-scrollbar-track{
   background-color: var(--bg-color);
 }
-.heading{
-  text-align: center;
-  font-size: 7rem;
-  margin: 5rem;
-}
+
 
 .event{
-  background-color: var(--second-bg-color);
+  min-width: 100vh;
+  padding: 15rem 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.event-box{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
-  place-items: center;
-  gap: 3rem;
-  row-gap: 5rem;
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 50px 40px;
+
+  
 }
-.event-card{
+
+.card-slider .card-item {
+  user-select: none;
+  height: 600px; /* Fixed height for alignment */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: var(--bg-color);
-  border: 2px solid var(--main-color);
-  border-radius: 3rem;
-  gap: 2rem;
-  padding: 5rem 2rem;
-  overflow: hidden;
+  align-items: center;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  justify-content: flex-start; /* Keep content aligned at the top */
+}
+
+.card-slider .card-item .card-image {
+  max-width: 400;
+  width: 100%;
+  height: 250px;
+  border: 3px solid #00ace2;
+  border-end-start-radius: 8px;
+
+  
+  
+}
+
+.card-slider .card-item .card-title {
+  font-size: 24px;
+  margin: 16px 0 8px;
+}
+
+.card-slider .card-item .card-button {
+  padding: 8px 24px;
+  margin-top: 12px;
+  background: #00ace2;
+  color: #fff;
+  border: 2px solid #00ace2;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
   cursor: pointer;
-  box-shadow: 0 0 5px var(--main-color);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
-.event-card :hover{
-  box-shadow: 0 0 25px var(--main-color),
-              0 0 50px var(--main-color);
-  transform: scale(1.02);
+
+.card-slider .card-item .card-button:hover {
+  background: transparent;
+  color: #00ace2;
+  border-color: #00ace2;
 }
-.event-card img{
-  max-width: 300px;
-  border-radius: 2em;
-  object-fit: cover;
+
+.card-slider #photographer .card-image {
+  border-color: #ff0000;
 }
-.event-card h3{
+
+.card-slider #photographer .card-button {
+  background: #ff0000;
+  border: 2px solid #ff0000;
+}
+
+.card-slider #photographer .card-button:hover {
+  background: transparent;
+  color: #ff0000;
+}
+
+.card-slider #freelancer .card-image {
+  border-color: #008000;
+}
+
+.card-slider #freelancer .card-button {
+  background: #008000;
+  border: 2px solid #008000;
+}
+
+.card-slider #freelancer .card-button:hover {
+  background: transparent;
+  color: #008000;
+}
+
+.card-slider #gamer .card-image {
+  border-color: #8b5dff;
+}
+
+.card-slider #gamer .card-button {
+  background: #8b5dff;
+  border: 2px solid #8b5dff;
+}
+
+.card-slider #gamer .card-button:hover {
+  background: transparent;
+  color: #8b5dff;
+}
+
+.card-slider #researcher .card-image {
+  border-color: #ff8000;
+}
+
+.card-slider #researcher .card-button {
+  background: #ff8000;
+  border: 2px solid #ff8000;
+}
+
+.card-slider #researcher .card-button:hover {
+  background: transparent;
+  color: #ff8000;
+}
+
+.card-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+}
+
+.card-slider .slider-button {
+  color: #fff;
+  margin-top: -40px;
+  transition: 0.3s ease;
+}
+
+.card-slider .slider-button:hover {
+  color: #00ace2;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .card-slider .slider-button {
+    display: none;
+  }
+}
+.card-description{
+  font-size: 2rem;
+  color: var(--bg-color);
+}
+.card-title{
   font-size: 3rem;
+  color: var(--bg-color);
 }
-.event-card p{
-  font-size: 1.6rem;
-}
+
+
 .contact{
   background-color: var(--bg-color);
   
@@ -302,6 +427,10 @@ section{
 .footer{
   background-color: var(--second-bg-color);
   padding: 50px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
 }
 
 .footer .social-icons {
@@ -418,7 +547,8 @@ section{
   .contact form{
     flex-direction: column;
   }
+  .footer {
+    background-size: cover;
+    padding: 20px; 
+  }
 }
-
-
-

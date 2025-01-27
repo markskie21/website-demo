@@ -6,6 +6,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="swiper.css">
+ <link rel="stylesheet" href="style1.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 <body>
@@ -33,7 +37,7 @@
       <h3>
         We're a <span>Web Developer</span>
       </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo eaque debitis dolor dicta repellendus! Voluptates earum, sequi alias consectetur, dolorem pariatur natus nulla tempore, incidunt commodi saepe obcaecati doloremque.
+      <p> From Information Of Computer Technology
       </p>
       <div class="social-icons">
         <a href="#">
@@ -75,55 +79,106 @@
       <a href="#" class="btn">Read More</a>
     </div>
   </section>
-  <section class="event" id="event">
-    <h2 class="heading">Events</h2>
-    <div class="event-box">
-      <div class="event-card">
-        <img src="BENCH YELL (1).png" alt="">
-        <h3>Bench Yell</h3>
-        <p>Bench yell events, often called cheer rallies, are energetic gatherings where students and teams unite to perform chants and cheers. These activities build camaraderie, inspire enthusiasm, and spark competitive energy. </p>
-      </div>
-   
-    
-      <div class="event-card">
-        <img src="teknomodelo.png" alt="">
-        <h3>Tekno Modelo</h3>
-        <p>Tekno Modelo is a creative competition where participants design and present outfits inspired by gods and goddesses, blending mythology with artistic innovation. It celebrates creativity, cultural heritage, and imaginative storytelling through fashion. </p>
-      </div>
-  
-   
-      <div class="event-card">
-        <img src="pasiklaban (2).png" alt="">
-        <h3>Pasiklaban</h3>
-        <p>Pasiklaban is a vibrant competition that highlights acting performances, where participants showcase their talent, creativity, and passion for storytelling on stage. It celebrates dramatic arts and the spirit of friendly rivalry. </p>
-      </div>
- 
-    
-      <div class="event-card">
-        <img src="debate (1).png" alt="">
-        <h3>Debate</h3>
-        <p>Debate is an intellectual competition where participants engage in structured arguments, presenting and defending their perspectives on various topics. It fosters critical thinking, public speaking, and respectful discourse. </p>
-      </div>
-   
-    
-      <div class="event-card">
-        <img src="esports (1).png" alt="">
-        <h3>Esports</h3>
-        <p>Esports, short for electronic sports, is a competitive gaming phenomenon where players and teams face off in video game tournaments. These events combine skill, strategy, and teamwork, attracting global audiences and fostering a vibrant gaming community.</p>
-      </div>
-  
-   
-      <div class="event-card">
-        <img src="hackathon (1).png" alt="">
-        <h3>Hackathon</h3>
-        <p>A hackathon, also known as a codefest, is a social coding event that brings computer programmers and other interested people together to improve upon. They have become hotbeds of technology, collaboration, and learning. </p>
-      </div>
-  
+ <section class="event" id="event">
+  <div class="card-slider swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <img src="BENCH YELL (1).png" alt="Developer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Bench Yell</h3>
+            <p class="card-description">
+              Bench yell events, or cheer rallies, are lively gatherings where students unite for chants and cheers, fostering camaraderie, enthusiasm, and team spirit.</p>
+          
+          </div>
+        </div>
 
-   
+        <div class="card-item swiper-slide" id="photographer">
+          <img src="teknomodelo.png" alt="Photographer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Tekno Modelo</h3>
+            <p class="card-description">Tekno Modelo is a creative competition where participants design and present outfits inspired by gods and goddesses, blending mythology with artistic innovation. It celebrates creativity, cultural heritage, and imaginative storytelling through fashion.</p>
+    
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide" id="freelancer">
+          <img src="pasiklaban (2).png" alt="Freelancer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Pasiklaban</h3>
+            <p class="card-description">Pasiklaban is a vibrant competition that highlights acting performances, where participants showcase their talent, creativity, and passion for storytelling on stage. It celebrates dramatic arts and the spirit of friendly rivalry.</p>
+           
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="debate (1).png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Debate</h3>
+            <p class="card-description">Debate is an intellectual competition where participants engage in structured arguments, presenting and defending their perspectives on various topics. It fosters critical thinking, public speaking, and respectful discourse.
+            </p>
+        
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide" id="researcher">
+          <img src="esports (1).png"Researcher" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Esports</h3>
+            <p class="card-description">Esports, or electronic sports, are competitive gaming tournaments where players showcase skill, strategy, and teamwork, uniting a global gaming community.</p>
+        
+          </div>
+        </div>
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="hackathon (1).png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Hackathon</h3>
+            <p class="card-description">A hackathon, also known as a codefest, is a social coding event that brings computer programmers and other interested people together to improve upon. They have become hotbeds of technology, collaboration, and learning. </p>
+          </div>
+        </div>
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="palarong pinoy (1).png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Palarong Pinoy</h3>
+            <p class="card-description">Palarong Pinoy is a traditional games competition that showcases classic Filipino games, fostering camaraderie, teamwork, and a celebration of Filipino culture.
+            </p>
+       
+          </div>
+        </div>
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="trad (1).png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Traditional Arts</h3>
+            <p class="card-description">Traditional Arts is a celebration of heritage and craftsmanship, where participants showcase skills in creating culturally inspired artworks. It honors history, creativity, and the richness of traditional Filipino artistry.</p>
+      
+          </div>
+        </div>
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="digi (2).png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Digital Arts</h3>
+            <p class="card-description">Digital Arts is a creative competition where participants use technology to craft visually stunning and innovative digital artworks. It highlights modern creativity, technical skills, and artistic expression in the digital age.</p>
+       
+          </div>
+        </div>
+        <div class="card-item swiper-slide" id="gamer">
+          <img src="animation.png" alt="Gamer" class="card-image" />
+          <div class="card-details">
+            <h3 class="card-title">Animation</h3>
+            <p class="card-description">Animation is a dynamic competition where participants bring stories to life through moving visuals, showcasing creativity, storytelling, and technical artistry. It celebrates innovation and the magic of animated storytelling.</p>
+      
+          </div>
+        </div>
+
+      </div>
     </div>
-  </section>
 
+    <div class="swiper-pagination"></div>
+    <div class="slider-button swiper-button-prev"></div>
+    <div class="slider-button swiper-button-next"></div>
+  </div>
+</section>
+  
   <section class="about-us"id=about-us>
     <div class="about-img">
       <img src="FirstImage2.jpg" alt="">
@@ -169,6 +224,9 @@
 
       </form>
  </section>
+
+
+ 
  <footer class="footer">
   <div class="social-icons">
     <a href="#">
@@ -210,10 +268,11 @@
 
  
 
-  
-   
-    
- <script class="script.js"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+ <script src="script.js"></script>
   
 </body>
 </html>
