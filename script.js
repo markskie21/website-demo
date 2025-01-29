@@ -6,6 +6,7 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x'); 
   navbar.classList.toggle('active'); 
+  navbar.classList.remove('close')
 
 }
 const swiper = new Swiper(".slider-wrapper", {
@@ -14,20 +15,20 @@ const swiper = new Swiper(".slider-wrapper", {
   spaceBetween: 30,
   grabCursor: true,
 
-  // If we need pagination
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
 
-  // Navigation arrows
+ 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // Responsive breakpoints
+
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -40,3 +41,21 @@ const swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+
+ScrollReveal({
+  reset: true,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
+
+});
+
+ScrollReveal().reveal('.home-content',{delay:250, orgin:'right'});
+ScrollReveal().reveal('.about-content',{delay:250, orgin:'right'});
+
+ScrollReveal().reveal('#event',{delay:250, orgin:'left'});
+ScrollReveal().reveal('#about-us',{delay:250, orgin:'left'});
+ScrollReveal().reveal('#contact',{delay:250, orgin:'left'});
+
+
+document.querySelector("#about > div > div > div > div > div.col-lg-7.col-sm-5 > img:nth-child(1)")
