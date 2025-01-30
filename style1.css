@@ -184,3 +184,25 @@ body {
     display: none;
   }
 }
+
+button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(270deg, #ddee45 10%, #620dc4 100%);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-left: 1.5rem;
+}
+
+button:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%) scale(1.1);
+}
